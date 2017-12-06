@@ -1,0 +1,36 @@
+﻿<div ng-if="!vm.character">
+    <div class="row">
+        <h5><a class="text-primary" href="#/frame/claudio">Claudio Serafino</a></h5>
+    </div>
+    <div class="row">
+        <h5><a class="text-primary" href="#/frame/gigas">Gigas</a></h5>
+    </div>
+    <div class="row">
+        <h5><a class="text-primary" href="#/frame/katarina">Katarina Alves</a></h5>
+    </div>
+</div>
+<div ng-if="vm.character" class="page-header">
+    <h4 class="text-primary">{{vm.character.first}} {{vm.character.last}}</h4>
+</div>
+<table ng-if="vm.character" class="table table-striped table-hover ">
+    <thead>
+        <tr class="text-warning">
+            <th>Command</th>
+            <th>Hit level</th>
+            <th>On start up</th>
+            <th>On block</th>
+            <th>On Hit</th>
+            <th>On Counter</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="move in vm.character.moves">
+            <td>{{move.command}}</td>
+            <td>{{move.hitLevel}}</td>
+            <td>{{move.startUp}}</td>
+            <td>{{move.block}}</td>
+            <td>{{move.hit}}</td>
+            <td>{{move.counter}}</td>
+        </tr>
+    </tbody>
+</table> 

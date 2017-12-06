@@ -1,0 +1,70 @@
+﻿.container-below-header {
+    margin-top: 51px !important;
+}
+
+.black-screen {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.videoContainer {
+    display: none;
+}
+
+.canvasContainer {
+   width: 100%;  
+   height: auto;
+}
+
+.menu {
+    display: block;
+    background-color: black;
+    opacity: 0.8;
+    position:absolute; 
+    top:5%; 
+    left:5%;
+}
+
+.menuText {
+    background: black;
+    border-color: black;
+    color: white;
+}
+
+.playButton {
+    display: block;
+    margin: 0px auto 20px;
+    width: 159px;
+    height: 56px;
+    background: url('/img/Play_Button.jpg') 0 0 no-repeat;
+    cursor: pointer;
+}
+
+.playButton:hover {
+    background-position: 0 -56px;
+}
+
+.tryAgainButton {
+    display: block;
+    margin: 0px auto 20px;
+    width: 159px;
+    height: 56px;
+    background: url('/img/Try_Again_Button.jpg') 0 0 no-repeat;
+}
+
+.tryAgainButton:hover {
+    background-position: 0 -56px;
+}
+
+.scoreBoard {
+    display: block;
+    background-color: black;
+    color: white;
+}
+
+span.lifeCount {
+    color: red;
+}
+
+span.breakCount {
+    color: green;
+}
